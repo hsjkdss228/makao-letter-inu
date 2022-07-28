@@ -1,0 +1,19 @@
+header {
+    display: flex;
+
+    justify-content: center;
+    
+    padding: 6.7vw 0;
+
+    border-bottom: 1px solid black;
+}
+
+header .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 8vw;
+    color: black;
+}
+
+header ul {
+    display: none;
+}
