@@ -37,3 +37,29 @@
 #slogan h2 strong {
     display: block;
 }
+
+@media (min-width:600px) {
+    #slogan {
+        padding-top: 17em;
+    }
+
+    #slogan img {
+        top: -5.5em;
+        width: 30em;
+    }
+
+    #slogan .title {
+        padding: .5em 0;
+    }
+
+    #slogan h2 {
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+
+    #slogan h2 strong {
+        font-size: 1em;
+        line-height: 1em;
+        display: block;
+    }
+}
