@@ -139,3 +139,10 @@
         border-radius: 2em;
     }
 }
+
+@media (min-width:900px) {
+    #posts .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
