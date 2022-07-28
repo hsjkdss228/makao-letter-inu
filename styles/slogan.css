@@ -58,8 +58,34 @@
     }
 
     #slogan h2 strong {
+        display: block;
+        
         font-size: 1em;
         line-height: 1em;
+    }
+}
+
+@media (min-width:1024px) {
+    #slogan .title {
         display: block;
+
+        padding: .5em .3em;
+        text-align: center;
+    }
+
+    #slogan h2 {
+        font-size: 3em;
+        line-height: 2em;
+
+        max-width: 1024px;
+        
+        margin: 0 auto;
+    }
+
+    #slogan h2 strong {
+        display: inline;
+
+        font-size: 1em;
+        line-height: 1em;
     }
 }
