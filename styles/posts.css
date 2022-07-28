@@ -25,7 +25,7 @@
 #posts .card a {
     display: grid;
 
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 1.3fr;
     grid-template-rows: 1fr 5fr 0.7fr;
     grid-template-areas:
         "title title title"
@@ -94,4 +94,64 @@
 #posts .more:active {
     color: white;
     background-color: #4593FC;
+}
+
+@media (min-width:600px) {
+    #posts {
+        padding: 0 3em 5em 3em;
+    }
+
+    #posts .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #posts .card a {
+        padding: 1em 1em 0 1em;
+
+        height: 19em;
+    }
+
+    #posts .title {
+        font-size: 1em;
+    }
+
+    #posts .summary {
+        font-size: 1em;
+    }
+
+    #posts time {
+        font-size: 0.8em;
+
+        line-height: 1em;
+    }
+
+    #posts .reaction {
+        font-size: 0.8em;
+    }
+
+    #posts .more {
+        font-size: 1.2em;
+        
+        margin: 2.5em 0;
+        padding: 0.5em 2em;
+
+        border-radius: 2em;
+    }
+}
+
+@media (min-width:900px) {
+    #posts .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    #posts .cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        max-width: 1024px;
+    }
 }

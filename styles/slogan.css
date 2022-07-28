@@ -37,3 +37,55 @@
 #slogan h2 strong {
     display: block;
 }
+
+@media (min-width:600px) {
+    #slogan {
+        padding-top: 17em;
+    }
+
+    #slogan img {
+        top: -5.5em;
+        width: 30em;
+    }
+
+    #slogan .title {
+        padding: .5em 0;
+    }
+
+    #slogan h2 {
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+
+    #slogan h2 strong {
+        display: block;
+        
+        font-size: 1em;
+        line-height: 1em;
+    }
+}
+
+@media (min-width:1024px) {
+    #slogan .title {
+        display: block;
+
+        padding: .5em .3em;
+        text-align: center;
+    }
+
+    #slogan h2 {
+        font-size: 3em;
+        line-height: 2em;
+
+        max-width: 1024px;
+        
+        margin: 0 auto;
+    }
+
+    #slogan h2 strong {
+        display: inline;
+
+        font-size: 1em;
+        line-height: 1em;
+    }
+}
